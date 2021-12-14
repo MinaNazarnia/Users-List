@@ -1,0 +1,16 @@
+.navbar-color{
+    background-color: rgb(114, 65, 160);
+}
+
+button.createUserButton{
+    background-color: rgb(114, 65, 160);
+}
+
+.img-setting{
+    border-radius: 50px;
+    border-color: whitesmoke;
+}
+
+.fontS{
+    font-size: small;
+}

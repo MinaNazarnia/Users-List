@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Users</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Users.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-nav navbar-color flex d-flex mt-0 mb-5">
+            <div class="input-group justify-content-end pe-3">
+                <form class="form-outline d-flex">
+                    <input id="search-focus" type="search" placeholder="Search" class="form-control" />
+                    <!-- <label class="form-label" for="form1">Search</label> -->
+                    <button type="button" class="btn btn-primary">
+                        <!-- <i class="fas fa-search ps-1 pe-1" aria-label="magnify"></i> -->
+                        <i class="bi bi-search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex mt-5 mb-4 d-flex justify-content-around pt-5 pb-4 flex-wrap">
+            <h4>Manage Users</h4>
+            <button class="btn createUserButton text-white" onclick="createUser()">Create
+                User</button>
+        </div>
+
+        <div class="container">
+            <div id="firstDiv" class="m-2 p-2 flex d-flex flex-sm-row flex-column flex-wrap justify-content-center">
+            </div>
+
+            <!-- <div class="mt-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+        </div>
+
+    </main>
+
+    <footer id="paginationFooter" class="d-flex justify-content-center">
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <button class="btn btn-outline-primary" type="button" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                </li>
+                <ul id="pageNumberText">
+
+                </ul>
+                <li class="page-item">
+                    <button class="btn btn-outline-primary" type="button" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <script src="Users.js"></script>
+</body>
+
+</html>
