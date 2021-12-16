@@ -81,7 +81,7 @@ userProfile().then(function (userData) {
     dataUl.appendChild(aboutLi);
 
 
-    // ? other tab
+    // ? timeline tab
 
     let timelineLi = document.createElement('li');
     timelineLi.className = "nav-item";
@@ -416,6 +416,55 @@ userProfile().then(function (userData) {
     info.appendChild(tabContent);
 
     row2.appendChild(info);
+
+
+    // // * timeline tab
+
+    // let timeline = document.createElement('div');
+    // timeline.className = "col-md-8";
+
+    // let tabProfile = document.createElement('div');
+    // tabProfile.classList = "tab-content profile-tab";
+
+    // let timelineTab = document.createElement('div');
+    // timelineTab.classList = "tab-pane fade show";
+    // timelineTab.role = "tabpanel";
+    // timelineTab.ariaLabelLedby = "profile-tab";
+
+
+    // // * node Id
+
+    // let nodeIdRow1 = document.createElement('div');
+    // nodeIdRow1.className = "row mt-5";
+
+    // let nodeId1 = document.createElement('div');
+    // nodeId1.className = "col-md-6";
+
+    // let nodeIdLabel1 = document.createElement('label');
+    // nodeIdLabel1.innerText = "Node ID";
+
+    // nodeId1.appendChild(nodeIdLabel1);
+
+    // nodeIdRow1.appendChild(nodeId1);
+
+    // let nodeIdValue1 = document.createElement('div');
+    // nodeIdValue1.className = "col-md-6";
+
+    // let nodeIdP1 = document.createElement('p');
+    // nodeIdP1.innerText = userData.node_id;
+
+    // nodeIdValue1.appendChild(nodeIdP1);
+
+    // nodeIdRow1.appendChild(nodeIdValue1);
+
+    // timelineTab.appendChild(nodeIdRow1);
+
+    // tabProfile.appendChild(timelineTab);
+
+    // timeline.appendChild(tabProfile);
+
+    // row2.appendChild(timeline);
+
 
     document.getElementById('profile').appendChild(row2);
 
