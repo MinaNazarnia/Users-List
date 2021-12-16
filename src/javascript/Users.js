@@ -70,24 +70,28 @@ userInfo().then(function (num) {
         document.getElementById("firstDiv").appendChild(card);
     });
 
-    document.getElementById('pageNumberText').addEventListener("load", function paginator() {
-        for (let i = 0; i <= totalPage.length; i++) {
 
-            let pageNumber = document.createElement('li');
-            pageNumber.className = "page-item";
 
-            let pageNumberBtn = document.createElement('button');
-            pageNumberBtn.classList = "btn btn-outline-primary";
-            pageNumberBtn.type = "button";
-            pageNumberBtn.innerText = index;
-            pageNumberBtn.addEventListener("click", changePage(i));
 
-            console.login(pageNumberBtn);
 
-            pageNumber.appendChild(pageNumberBtn);
-            document.getElementById('pageNumber').appendChild(pageNumber);
-        }
-    });
+    // document.getElementById('pageNumberText').addEventListener("load", function paginator() {
+    //     for (let i = 0; i <= totalPage.length; i++) {
+
+    //         let pageNumber = document.createElement('li');
+    //         pageNumber.className = "page-item";
+
+    //         let pageNumberBtn = document.createElement('button');
+    //         pageNumberBtn.classList = "btn btn-outline-primary";
+    //         pageNumberBtn.type = "button";
+    //         pageNumberBtn.innerText = index;
+    //         pageNumberBtn.addEventListener("click", changePage(i));
+
+    //         console.login(pageNumberBtn);
+
+    //         pageNumber.appendChild(pageNumberBtn);
+    //         document.getElementById('pageNumber').appendChild(pageNumber);
+    //     }
+    // });
 
     // createPage(totalPage);
 })
@@ -96,67 +100,96 @@ function createUser() {
     alert("Login as Admin!");
 }
 
+
 // function createPage(totalPage) {
 
-// let pagination = document.createElement('nav');
-// pagination.ariaLabel = "Page navigation example";
+// ************************************************************************************
 
-// let paginationUl = document.createElement('ul');
-// paginationUl.className = "pagination";
+// ! not work :((((
 
-// let paginationP = document.createElement('li');
-// paginationP.className = "page-item";
+// document.getElementById('paginationFooter').addEventListener("load", function paginator() {
 
-// let previousBtn = document.createElement('button');
-// previousBtn.type = "button";
-// previousBtn.className = "btn";
-// previousBtn.ariaLabel = "Previous";
-// previousBtn.addEventListener("Previous", gotoPage());
+//     let pagination = document.createElement('nav');
+//     pagination.ariaLabel = "Page navigation example";
 
-// let preSymbol = document.createElement('span');
-// preSymbol.ariaHidden = "true";
-// preSymbol.innerText = "&laquo";
-// previousBtn.appendChild(preSymbol);
+//     let paginationUl = document.createElement('ul');
+//     paginationUl.className = "pagination";
 
-// let preText = document.createElement('span');
-// preText.className = "sr-only";
-// preText.innerText = "Previvous";
-// previousBtn.appendChild(preText);
+//     let paginationP = document.createElement('li');
+//     paginationP.className = "page-item";
 
-// paginationUl.appendChild(paginationP);
+//     let previousBtn = document.createElement('button');
+//     previousBtn.type = "button";
+//     previousBtn.classList = "btn btn-outline-primary";
+//     previousBtn.ariaLabel = "Previous";
+//     previousBtn.addEventListener("Previous", gotoPage());
 
-// totalPage.forEach(creatingPage, index => {
+//     let preSymbol = document.createElement('span');
+//     preSymbol.ariaHidden = "true";
+//     preSymbol.innerText = "Previous";
 
+//     previousBtn.appendChild(preSymbol);
 
+//     let preText = document.createElement('span');
+//     preText.className = "sr-only";
+//     preText.innerText = "Previous";
 
+//     previousBtn.appendChild(preText);
 
-// let paginationN = document.createElement('li');
-// paginationN.className = "page-item";
+//     paginationP.appendChild(previousBtn)
 
-// let nextBtn = document.createElement('button');
-// nextBtn.className = "btn";
-// nextBtn.type = "button";
-// nextBtn.ariaLabel = "Next";
-// nextBtn.addEventListener("Next", gotoPage());
+//     paginationUl.appendChild(paginationP);
 
-// let nextSymbol = document.createElement('span');
-// nextSymbol.ariaHidden = "true";
-// nextSymbol.innerText = "&raquo";
+//     // document.getElementById('pageNumberText').addEventListener("load", function paginator() {
+//     for (let i = 1; i <= totalPage; i++) {
+//         let pageNumber = document.createElement('li');
+//         pageNumber.className = "page-item";
 
-// nextBtn.appendChild(nextSymbol);
+//         let pageNumberBtn = document.createElement('button');
+//         pageNumberBtn.classList = "btn btn-outlinr-primary";
 
-// let nextText = document.createElement('span');
-// nextText.className = "sr-only";
-// nextText.innerText = "Next";
-// nextBtn.appendChild(nextText);
+//         let pageNumberLink = document.createElement('a');
+//         pageNumberLink.className = "page-link";
 
-// paginationN.appendChild(nextBtn);
+//         pageNumberBtn.appendChild(pageNumberLink);
 
-// paginationUl.appendChild(paginationN);
+//         pageNumber.appendChild(pageNumberBtn);
 
-// pagination.appendChild(paginationUl);
+//         paginationUl.appendChild(pageNumber);
 
-// document.getElementById('paginationFooter').appendChild(pagination);
+//     }
+
+//     let paginationN = document.createElement('li');
+//     paginationN.className = "page-item";
+
+//     let nextBtn = document.createElement('button');
+//     nextBtn.className = "btn btn-outline-primary";
+//     nextBtn.type = "button";
+//     nextBtn.ariaLabel = "Next";
+//     nextBtn.addEventListener("Next", gotoPage());
+
+//     let nextSymbol = document.createElement('span');
+//     nextSymbol.ariaHidden = "true";
+//     nextSymbol.innerText = "Next";
+
+//     nextBtn.appendChild(nextSymbol);
+
+//     let nextText = document.createElement('span');
+//     nextText.className = "sr-only";
+//     nextText.innerText = "Next";
+
+//     nextBtn.appendChild(nextText);
+
+//     paginationN.appendChild(nextBtn);
+
+//     paginationUl.appendChild(paginationN);
+
+//     pagination.appendChild(paginationUl);
+
+//     document.getElementById('paginationFooter').appendChild(pagination);
+// });
+
+// *********************************************************************************
 
 function gotoPage(page) {
     if (page == 'next') {

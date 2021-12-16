@@ -277,7 +277,9 @@ userProfile().then(function (userData) {
     aboutTab.role = "tabpanel";
     aboutTab.ariaLabelLedby = "home-tab";
 
+
     // * node Id
+
     let nodeIdRow = document.createElement('div');
     nodeIdRow.className = "row mt-5";
 
@@ -407,23 +409,14 @@ userProfile().then(function (userData) {
     aboutTab.appendChild(bioRow);
 
 
-
     // the last 
+
     tabContent.appendChild(aboutTab);
 
     info.appendChild(tabContent);
 
     row2.appendChild(info);
 
-    // "node_id": "MDQ6VXNlcjE4MjU3OTg=",
-    //     "company": null,
-    //         "blog": "",
-    //             "location": "San Francisco, CA",
-    //                 "email": null
-    // "bio": null,
-
-
     document.getElementById('profile').appendChild(row2);
-
 
 });
