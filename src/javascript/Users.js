@@ -16,9 +16,9 @@ async function userInfo() {
 
 userInfo().then(function (num) {
     num.forEach((user, index) => {
-        if (index % pageSize == 0) {
-            totalPage += 1;
-        }
+        // if (index % pageSize == 0) {
+        //     totalPage += 1;
+        // }
         let card = document.createElement("div");
         card.classList = "card m-2 col-lg-2 col-md-3 col-sm-4";
 
@@ -70,8 +70,10 @@ userInfo().then(function (num) {
         document.getElementById("firstDiv").appendChild(card);
     });
 
-
-
+    function createUser() {
+        alert("Login as Admin!");
+    }
+    
 
 
     // document.getElementById('pageNumberText').addEventListener("load", function paginator() {
@@ -95,11 +97,6 @@ userInfo().then(function (num) {
 
     // createPage(totalPage);
 })
-
-function createUser() {
-    alert("Login as Admin!");
-}
-
 
 // function createPage(totalPage) {
 
@@ -191,17 +188,17 @@ function createUser() {
 
 // *********************************************************************************
 
-function gotoPage(page) {
-    if (page == 'next') {
-        currentPage < totalPage ? currentPage += 1 : null;
-    }
-    else if (page == 'previous') {
-        currentPage > 1 ? currentPage -= 1 : null;
-    }
-    else
-        currentPage = page
-}
+// function gotoPage(page) {
+//     if (page == 'next') {
+//         currentPage < totalPage ? currentPage += 1 : null;
+//     }
+//     else if (page == 'previous') {
+//         currentPage > 1 ? currentPage -= 1 : null;
+//     }
+//     else
+//         currentPage = page
+// }
 
-function changePage(page) {
-    currentPage = page;
-}
+// function changePage(page) {
+//     currentPage = page;
+// }
